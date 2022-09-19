@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+       <style type="text/css">
+           .box_2 {
+               display: flex;
+               align-items:center;
+            }
+       </style>
+</head>
+
+<body>
+    <h4>jQuery Filter by category and search</h1>
+        <br>
+        <hr>
+
+    <div class="row">
+        <div class="col-md-4">
+            <input type="text" id="search" class="form-control" placeholder="Search product by name or sku">
+        </div>
+        <div class="col-md-8">
+           <!--  <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" id="all" class="btn btn-success">All</button>
+                <button type="button" id="drink" class="btn btn-success">Drink</button>
+                <button type="button" id="food" class="btn btn-success">Food</button>
+                <button type="button" id="c" class="btn btn-success">C</button>
+            </div> -->
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+      <div class="row" id="parent">
+        <div class="col-md-4 box">
+            <div class="card rounded-0">
+             <div class="card-body box_2">
+               <img src="images/72e01eeb4d180310668b157b8eb2c7fb204dc16c.jpg"class="rounded-circle" style="box-shadow: 0px 0px 3px 0px rgb(0 0 0 / 81%); max-width: 26%;height: auto;" alt="">
+                  <span class="ms-2">
+                   <p class="name fw-bold m-0 p-0" style="font-size: 13px">Md. Sultan Mahmud Shovon </p>
+                   <p class="sku fw-bold m-0 p-0" style="font-size: 13px">Audit (Executive)</p>
+                   <p class="fw-bold m-0 p-0" style="font-size: 13px">Savoy Ice Cream Factory Limited</p> 
+                    <p class="m-0 p-0" style="font-size: 13px"> <b><i class="fa fa-mobile"></i></b> &nbsp  01844558632   <i class="ms-4 fa fa-phone"></i> &nbsp  371</p>
+                    <p class="m-0 p-0" style="font-size: 13px"> <b><i class="fa fa-envelope"></i></b> &nbsp aud01.savoy@goldengroup-bd.com</p>
+                </span>
+            </div>
+            </div>
+        </div>
+         <div class="col-md-4 box">
+            <div class="card">
+             <div class="card-body box_2">
+               <img src="images/6f48fe6d9a309015b6c5e23e774be32367404b4f.jpg"class="rounded-circle" style="box-shadow: 0px 0px 3px 0px rgb(0 0 0 / 81%); max-width: 26%;height: auto;" alt="">
+                  <span class="ms-2">
+                   <p class="name fw-bold m-0 p-0" style="font-size: 13px">Md. Shamsul Islam Shiblee </p>
+                   <p class="sku fw-bold m-0 p-0" style="font-size: 13px">Audit (Assistant Manager)</p>
+                   <p class="fw-bold m-0 p-0" style="font-size: 13px">Savoy Ice Cream Factory Limited</p> 
+                    <p class="m-0 p-0" style="font-size: 13px"> <b><i class="fa fa-mobile"></i></b> &nbsp  01844558632   <i class="ms-4 fa fa-phone"></i> &nbsp  371</p>
+                    <p class="m-0 p-0" style="font-size: 13px"> <b><i class="fa fa-envelope"></i></b> &nbsp m.shiblee@goldengroup-bd.com</p>
+                </span>
+            </div>
+            </div>
+        </div>
+         <div class="col-md-4 box">
+            <div class="card">
+             <div class="card-body box_2">
+               <img src="images/a557cb36d474042ae72d39cf75a8325f9ac4dff0.jpg"class="rounded-circle" style="box-shadow: 0px 0px 3px 0px rgb(0 0 0 / 81%); max-width: 26%;height: auto;" alt="">
+                  <span class="ms-2">
+                   <p class="name fw-bold m-0 p-0" style="font-size: 13px">Sheikh Salah Uddin </p>
+                   <p class="sku fw-bold m-0 p-0" style="font-size: 13px">Management Information System (Executive)</p>
+                   <p class="fw-bold m-0 p-0" style="font-size: 13px">Savoy Ice Cream Factory Limited</p> 
+                    <p class="m-0 p-0" style="font-size: 13px"> <b><i class="fa fa-mobile"></i></b> &nbsp  01844558632   <i class="ms-4 fa fa-phone"></i> &nbsp  371</p>
+                    <p class="m-0 p-0" style="font-size: 13px"> <b><i class="fa fa-envelope"></i></b> &nbsp  s.uddin@goldengroup-bd.com</p>
+                </span>
+            </div>
+            </div>
+        </div>
+         <div class="col-md-4 box">
+            <div class="card">
+             <div class="card-body box_2">
+               <img src="images/0319016d1cf595afe574aef1ae3f8c457293b3b2.jpg"class="rounded-circle" style="box-shadow: 0px 0px 3px 0px rgb(0 0 0 / 81%); max-width: 26%;height: auto;" alt="">
+                  <span class="ms-2">
+                   <p class="name fw-bold m-0 p-0" style="font-size: 13px">Tahmid Hasan Toki</p>
+                   <p class="sku fw-bold m-0 p-0" style="font-size: 13px">Sales Support (Senior Officer)</p>
+                   <p class="fw-bold m-0 p-0" style="font-size: 13px">Savoy Ice Cream Factory Limited</p> 
+                    <p class="m-0 p-0" style="font-size: 13px"> <b><i class="fa fa-mobile"></i></b> &nbsp  01844558632   <i class="ms-4 fa fa-phone"></i> &nbsp  371</p>
+                    <p class="m-0 p-0" style="font-size: 13px"> <b><i class="fa fa-envelope"></i></b> &nbsp aud01.savoy@goldengroup-bd.com</p>
+                </span>
+            </div>
+            </div>
+        </div>
+         <div class="col-md-4 box">
+            <div class="card">
+             <div class="card-body box_2">
+               <img src="images/2c8c022970e38a6062746c5cabed423e936ff09d.jpg"class="rounded-circle" style="box-shadow: 0px 0px 3px 0px rgb(0 0 0 / 81%); max-width: 26%;height: auto;" alt="">
+                  <span class="ms-2">
+                   <p class="name fw-bold m-0 p-0" style="font-size: 13px">Md. Tohedul Islam </p>
+                   <p class="sku fw-bold m-0 p-0" style="font-size: 13px">Management Information System (Trainee)</p>
+                   <p class="fw-bold m-0 p-0" style="font-size: 13px">Savoy Ice Cream Factory Limited</p> 
+                    <p class="m-0 p-0" style="font-size: 13px"> <b><i class="fa fa-mobile"></i></b> &nbsp  01844558632   <i class="ms-4 fa fa-phone"></i> &nbsp  371</p>
+                    <p class="m-0 p-0" style="font-size: 13px"> <b><i class="fa fa-envelope"></i></b> &nbsp aud01.savoy@goldengroup-bd.com</p>
+                </span>
+            </div>
+            </div>
+        </div>
+         <div class="col-md-4 box">
+            <div class="card">
+             <div class="card-body box_2">
+               <img src="images/27822fc7624532e0b0ba9558c1e8342b1235487b.jpg"class="rounded-circle" style="box-shadow: 0px 0px 3px 0px rgb(0 0 0 / 81%); max-width: 26%;height: auto;" alt="">
+                  <span class="ms-2">
+                   <p class="name fw-bold m-0 p-0" style="font-size: 13px">Md. Shahnewaz Alam</p>
+                   <p class="sku fw-bold m-0 p-0" style="font-size: 13px">Accounts (Manager)</p>
+                   <p class="fw-bold m-0 p-0" style="font-size: 13px">Savoy Ice Cream Factory Limited</p> 
+                    <p class="m-0 p-0" style="font-size: 13px"> <b><i class="fa fa-mobile"></i></b> &nbsp  01844558632   <i class="ms-4 fa fa-phone"></i> &nbsp  371</p>
+                    <p class="m-0 p-0" style="font-size: 13px"> <b><i class="fa fa-envelope"></i></b> &nbsp aud01.savoy@goldengroup-bd.com</p>
+                </span>
+            </div>
+            </div>
+        </div>
+
+      
+        </div>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/filter.js"></script>
+</body>
+
+</html>
